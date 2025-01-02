@@ -67,7 +67,7 @@ export default function Dashboard() {
           {/* Mobile Welcome */}
           <div className="md:hidden">
             <h2 className="text-xl mb-4">
-              👋 Welcome <span className="font-semibold">Karhik</span>
+               Welcome <span className="font-semibold">Karhik</span>
             </h2>
           </div>
 
