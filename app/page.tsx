@@ -1,7 +1,8 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { EventCarousel } from "@/components/event-carousel"
-
+import { Search} from 'lucide-react'
+import { Input } from "@/components/ui/input"
 const stats = [
   { title: "Completed", value: "6" },
   { title: "Not Completed", value: "2" },
@@ -56,6 +57,14 @@ export default function Dashboard() {
     <div className="min-h-screen bg-background">
       <div className="md:pl-64 p-4 md:p-8">
         <div className="max-w-7xl mx-auto space-y-6">
+          {/* Search Bar - Mobile Only */}
+          <div className="md:hidden mb-4">
+          <div className="relative flex-1">
+              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground h-4 w-4" />
+              <Input type="search" placeholder="Search events" className="pl-10" />
+            </div>
+          </div>
+
           {/* Welcome Section - Desktop Only */}
           <div className="hidden md:block">
             <h1 className="text-3xl font-bold tracking-tight">Dashboard</h1>
