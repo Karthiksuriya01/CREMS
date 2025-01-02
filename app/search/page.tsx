@@ -1,25 +1,25 @@
 'use client'
 
-import { useState } from 'react'
+// import { useState } from 'react'
 import { Search, Calendar, ChevronLeft, ChevronRight } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Card, CardContent } from "@/components/ui/card"
 import { Progress } from "@/components/ui/progress"
 
-const dates = [
-  { day: 'Mon', date: '12' },
-  { day: 'Tue', date: '13' },
-  { day: 'Wed', date: '14' },
-  { day: 'Thu', date: '15' },
-  { day: 'Fri', date: '16' },
-  { day: 'Sat', date: '17' },
-  { day: 'Sun', date: '18' },
-  { day: 'Mon', date: '19' },
-  { day: 'Tue', date: '20' },
-  { day: 'Wed', date: '21' },
-  // Add more dates as needed
-]
+// const dates = [
+//   { day: 'Mon', date: '12' },
+//   { day: 'Tue', date: '13' },
+//   { day: 'Wed', date: '14' },
+//   { day: 'Thu', date: '15' },
+//   { day: 'Fri', date: '16' },
+//   { day: 'Sat', date: '17' },
+//   { day: 'Sun', date: '18' },
+//   { day: 'Mon', date: '19' },
+//   { day: 'Tue', date: '20' },
+//   { day: 'Wed', date: '21' },
+//   // Add more dates as needed
+// ]
 
 const events = [
   {
@@ -49,7 +49,7 @@ const events = [
 ]
 
 export default function SearchPage() {
-  const [selectedDate, setSelectedDate] = useState('16')
+  // const [selectedDate, setSelectedDate] = useState('16')
 
   return (
     <div className="min-h-screen bg-background">
@@ -89,7 +89,7 @@ export default function SearchPage() {
 
           {/* Events Grid */}
           <div className="py-4">
-            <h3 className="text-lg font-semibold mb-4">Today's Events</h3>
+            <h3 className="text-lg font-semibold mb-4">Todays Events</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {events.map((event, index) => (
                 <Card key={index} className="transition-all hover:shadow-md">
