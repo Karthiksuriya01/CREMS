@@ -60,14 +60,14 @@ export default function Dashboard() {
           <div className="hidden md:block">
             <h1 className="text-3xl font-bold tracking-tight">Dashboard</h1>
             <p className="text-muted-foreground mt-2">
-              Welcome back, Karhik! Here's what's happening with your learning progress.                                                             
+              Welcome back, Karhik! Here what happening with your learning progress.
             </p>
           </div>
 
           {/* Mobile Welcome */}
           <div className="md:hidden">
             <h2 className="text-xl mb-4">
-               Welcome <span className="font-semibold">Karhik</span>
+              👋 Welcome <span className="font-semibold">Karhik</span>
             </h2>
           </div>
 
@@ -102,3 +102,4 @@ export default function Dashboard() {
     </div>
   )
 }
+
