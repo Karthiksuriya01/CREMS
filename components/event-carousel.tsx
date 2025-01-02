@@ -5,7 +5,7 @@ import useEmblaCarousel from 'embla-carousel-react'
 import { Card, CardContent } from "@/components/ui/card"
 import { Progress } from "@/components/ui/progress"
 import { Button } from "@/components/ui/button"
-import { Calendar } from 'lucide-react'
+import { Calendar, Check } from 'lucide-react'
 
 type Event = {
   title: string
@@ -45,7 +45,14 @@ export function EventCarousel({ events }: EventCarouselProps) {
                     <h4 className="font-semibold">{event.title}</h4>
                     <p className="text-sm text-muted-foreground">{event.description}</p>
                   </div>
-                  <span className="text-xs bg-[#00FF38] text-black px-2 py-1 rounded-full">
+                  <span className={`
+                    text-xs px-2 py-1 rounded-full inline-flex items-center gap-1
+                    ${event.status === 'completed' 
+                      ? 'bg-green-100 text-green-700' 
+                      : 'bg-red-100 text-red-700'
+                    }
+                  `}>
+                    {event.status === 'completed' && <Check className="w-3 h-3" />}
                     {event.status}
                   </span>
                 </div>

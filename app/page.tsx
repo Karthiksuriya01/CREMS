@@ -15,7 +15,7 @@ const events = [
     date: "12-02-2024",
     completed: 25,
     total: 79,
-    status: "ongoing"
+    status: "pending"
   },
   {
     title: "Web Development Workshop",
@@ -23,7 +23,7 @@ const events = [
     date: "15-02-2024",
     completed: 45,
     total: 60,
-    status: "ongoing"
+    status: "completed"
   },
   {
     title: "Data Science Fundamentals",
@@ -31,7 +31,7 @@ const events = [
     date: "18-02-2024",
     completed: 10,
     total: 50,
-    status: "ongoing"
+    status: "pending"
   },
   {
     title: "UI/UX Design Principles",
@@ -39,7 +39,7 @@ const events = [
     date: "20-02-2024",
     completed: 30,
     total: 40,
-    status: "ongoing"
+    status: "completed"
   },
   {
     title: "Machine Learning Basics",
@@ -47,7 +47,7 @@ const events = [
     date: "22-02-2024",
     completed: 5,
     total: 30,
-    status: "ongoing"
+    status: "pending"
   }
 ]
 
